@@ -1,0 +1,27 @@
+program maiormenoridade;
+
+var anonascimento, calc, anos: integer;
+
+begin
+
+    read(anonascimento);
+    calc:= 2020-anonascimento;
+    anos:= calc;
+    
+    writeln(anos);
+    
+        if (anos >= 16) then 
+            writeln('SIM')
+        
+        else 
+            writeln('NAO');
+            
+            
+        if (anos >= 18) then 
+            writeln('SIM')
+            
+        else 
+            writeln('NAO');
+
+    
+end.
