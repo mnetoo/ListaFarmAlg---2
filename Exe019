@@ -1,0 +1,21 @@
+program faltas;
+
+var 
+  
+    m,n1,n2,n3:real;
+    f:integer;
+
+begin
+   
+    read (n1,n2,n3,f);
+    m := ((n1+n2+n3)/3);
+
+    if (f >= 10) or (m < 4.0)  then
+        writeln ('NAO')
+
+    else if (m >= 4.0) and (m <= 6.9) then
+        writeln ('TALVEZ')
+
+        else 
+            writeln ('SIM');
+end.
