@@ -1,0 +1,28 @@
+program multi7e11;
+
+var 
+
+    x: longint;
+    m7, m11: real;
+
+begin
+
+    read(x);
+    m7:= x mod 7;
+    m11:= x mod 11;
+    
+    
+        if (m7 = 0) then
+            write('Multiplo exclusivamente de 7.')
+            
+            else if (m11 = 0) then
+                write('Multiplo exclusivamente de 11.');
+            
+                if (m7 = 0 ) and (m11 = 0) then
+                    write('Multiplo de 7 e de 11.')
+            
+                    else if (m7 <> 0) and (m11 <> 0) then
+                        write('Nao e multiplo nem de 7 nem de 11.');
+                    
+end.
+    
