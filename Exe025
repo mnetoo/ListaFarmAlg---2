@@ -1,0 +1,17 @@
+program IdadeEm2021;
+
+var
+  dia, mes, ano, idade: longint;
+
+begin
+
+  read(dia, mes, ano);
+  idade := 2021 - ano;
+  
+  if (mes > 4) and ((mes = 4) and (dia >= 29)) then
+    writeln(idade)
+    
+  else
+    writeln(idade - 1);
+end.
+
