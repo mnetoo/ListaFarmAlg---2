@@ -1,0 +1,20 @@
+program ex026;
+
+var
+    a, a2, watts: longint;
+    
+begin
+
+    read(a);
+    if (a<=6) then
+        writeln('100')
+    else
+    begin
+
+        if (a>6) then
+        a2:= a - 3;
+        watts:= 80 + (15*a2);
+        writeln(watts);
+
+end;
+end.
