@@ -1,0 +1,25 @@
+program temp;
+
+var
+
+    faren, conversao: real;
+
+begin
+
+    read(faren);
+    conversao:= ((faren - 32)/ 9) * 5;
+    
+    writeln(conversao:2:2);
+    
+    if (conversao <= 0) then
+        writeln('solido');
+        
+    if (conversao > 0) and (conversao < 100) then
+        writeln('liquido');
+        
+    if (conversao >= 100) then
+        writeln('gasoso');
+        
+
+end.
+    
