@@ -1,0 +1,30 @@
+program produtoscomprados;
+
+var
+    
+    codigo, quantidade: integer;
+    valor: real;
+    
+begin
+
+    read(codigo, quantidade);
+    
+    if (codigo = 1001) then
+        write((quantidade * 5.32):2:2);
+        
+        if (codigo = 1324) then
+            write((quantidade * 6.45):2:2);
+        
+            if (codigo = 6548) then
+                write((quantidade * 2.37):2:2);
+        
+                if (codigo = 987) then
+                    write((quantidade * 5.32):2:2);
+        
+                    if (codigo = 7623) then
+                        write((quantidade * 6.45):2:2);
+        
+    if (codigo <> 1001) or(codigo <> 1324) or (codigo <> 6548) or (codigo <> 987) or (codigo <>7623) then 
+        writeln('ERRO');
+        
+end.
