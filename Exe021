@@ -2,27 +2,24 @@ program multi7e11;
 
 var 
 
-    x: longint;
-    m7, m11: real;
+    a: longint;
 
 begin
 
-    read(x);
-    m7:= x mod 7;
-    m11:= x mod 11;
+    read(a);
     
     
-        if (m7 = 0) then
-            write('Multiplo exclusivamente de 7.')
+        if (a mod 7 = 0) and (a mod 11 = 0) then
+            write('Multiplo de 7 e de 11.')
             
-            else if (m11 = 0) then
-                write('Multiplo exclusivamente de 11.');
+            else if (a mod 7 = 0) and(not(a mod 11 = 0)) then
+                write('Multiplo exclusivamente de 7.')
             
-                if (m7 = 0 ) and (m11 = 0) then
-                    write('Multiplo de 7 e de 11.')
+                else if (not(a mod 7 = 0 )) and (a mod 11 = 0) then
+                    write('Multiplo exclusivamente de 11.')
             
-                    else if (m7 <> 0) and (m11 <> 0) then
-                        write('Nao e multiplo nem de 7 nem de 11.');
+                else
+                    write('Nao e multiplo nem de 7 nem de 11.');
                     
 end.
     
