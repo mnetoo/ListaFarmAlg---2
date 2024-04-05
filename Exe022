@@ -1,0 +1,25 @@
+program pontos;
+
+var
+
+    x, y: integer;
+    
+begin
+
+    read(x, y);
+    
+        if (x > 0) and (y > 0) then
+            write('1');
+            
+        if (X < 0) and (y >0) then
+            write('2');
+            
+        if (x < 0) and (y < 0) then
+            write('3');
+            
+        if (x > 0) and (y < 0) then
+            write('4');
+            
+        if (x = 0)
+        
+end.
