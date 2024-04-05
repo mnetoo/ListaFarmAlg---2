@@ -1,0 +1,34 @@
+program credit;
+
+var
+    saldomedio: longint;
+    
+begin
+
+    read(saldomedio);
+    
+        if (0 <= saldomedio) and (saldomedio < 200) then begin
+            writeln(saldomedio);
+            writeln('0')
+            
+        end
+            
+        else begin
+            if (saldomedio > 200) and (saldomedio < 400) then begin
+                writeln(saldomedio);
+                write('20%');
+            end;
+                
+            if (saldomedio > 400) and (saldomedio <= 600) then begin
+                writeln(saldomedio);
+                write('30%');
+            end; 
+                
+            if (saldomedio > 600) then begin
+                writeln(saldomedio);
+                write('40%');
+            end;
+            
+        end;
+            
+end.
