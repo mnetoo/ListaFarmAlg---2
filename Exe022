@@ -20,6 +20,13 @@ begin
         if (x > 0) and (y < 0) then
             write('4');
             
-        if (x = 0)
+        if (x = 0) and (y < 0) then
+            write('Y');
+            
+        if (x = 4) and (y = 0) then
+            write('X');
+            
+        if (x = 0) and (y = 0) then
+            write('O');
         
 end.
