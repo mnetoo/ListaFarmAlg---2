@@ -1,0 +1,26 @@
+program atleta;
+
+var
+
+    idade: integer;
+    
+begin
+
+    read(idade);
+    
+        if (idade >= 5) and (idade <= 7) then
+            write('1');
+            
+        if (idade >= 8) and (idade <= 10) then
+            write('2');
+            
+        if (idade >= 11) and (idade <= 13) then
+            write('3');
+            
+        if (idade >=14) and (idade <= 17) then
+            write('4');
+            
+        if (idade >= 18) then
+            write('5');
+            
+end.
