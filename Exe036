@@ -1,0 +1,30 @@
+program ex036;
+var
+	area, tipo: longint;
+
+begin
+	read( tipo, area );
+	if (tipo = 1) then
+	begin
+		if (area mod 2 = 0) then
+			writeln( (area div 2), ' caixas' )
+		else
+			writeln( (area div 2) + 1, ' caixas' )
+	end
+	
+	else if (tipo = 2) then
+	begin
+		if (area mod 3 = 0) then
+			writeln( (area div 3), ' caixas' )
+		else
+			writeln( (area div 3) + 1, ' caixas' )
+	end
+	
+	else if (tipo = 3) then
+	begin
+		if (area mod 4 = 0) then
+			writeln( (area div 4), ' caixas' )
+		else
+			writeln( (area div 4) + 1, ' caixas' )
+	end
+end.
