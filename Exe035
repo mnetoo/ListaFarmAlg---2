@@ -1,0 +1,31 @@
+program exe033;
+
+var
+
+    salario: real;
+    
+begin
+
+    read(salario);
+    
+        if (salario < 540.00) then
+            write('NAO');
+            
+    if (salario > 540.00) and (salario <= 1424.00) then
+        write('1 0.00');
+        
+    if (salario > 1424.00) and (salario <= 2150.00) then
+        write('2 ' , ((salario * 0.75) / 10):2:2);
+        
+    if (salario >= 2150.00) and (salario <= 2866.00) then
+        write('3 ' , (salario * 0.15):0:2);
+        
+    if (salario > 2866.00) and (salario <= 3582.00) then
+        write('4 ' , (salario * 0.225):0:2);
+        
+    if (salario > 3582.00) then
+        write('5 ' , (salario * 0.275):0:2);
+        
+end.
+        
+    
