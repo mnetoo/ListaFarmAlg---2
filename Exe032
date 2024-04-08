@@ -1,0 +1,30 @@
+program aumento;
+
+var 
+    cod: integer;
+    salario, salarionovo: real;
+
+begin
+    readln(salario, cod);
+    
+    if cod = 101 then
+    begin
+        salarionovo := salario + (10/100) * salario;
+    end
+    else if cod = 102 then
+    begin
+        salarionovo := salario + (20/100) * salario;
+    end
+    else if cod = 103 then
+    begin
+        salarionovo := salario + (30/100) * salario;
+    end
+    else
+    begin
+        salarionovo := salario + (40/100) * salario;
+    end;
+    
+    writeln(salario:0:2 );
+    writeln(salarionovo:0:2 );
+    writeln(salarionovo - salario:0:2 );
+end.
