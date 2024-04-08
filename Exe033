@@ -1,0 +1,22 @@
+program geometria;
+
+var
+    nlados, medida: integer;
+    
+begin
+
+    read(nlados, medida);
+    
+        if (nlados = 3) then
+            write('TRIANGULO ' , nlados * medida);
+            
+        if (nlados = 4) then
+            write('QUADRADO ' , medida * medida);
+            
+        if (nlados = 5) then
+            write('PENTAGONO');
+            
+        if (nlados < 3) or (nlados > 5) then
+            write('ERRO');
+            
+end.
