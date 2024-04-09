@@ -1,0 +1,26 @@
+program impar;
+
+var
+
+    i, r, n, im: integer;
+    
+begin
+
+    read(n);
+    
+    i:= 0;
+    r:= 0;
+    im:= 1;
+    
+        while i < n do
+        begin
+        
+            r:= r + im;
+            im:= im + 2;
+            i:= i + 1;
+            
+        end;
+        
+    write(r);
+    
+end.
