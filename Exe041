@@ -1,0 +1,28 @@
+program exxe041;
+
+var
+
+    n, f, p, u, i, fs: longint;
+    
+begin
+
+    read(n);
+    p:= 0;
+    u:= 1;
+    i:= 1;
+    fs:= 0;
+    
+        while i < n do 
+        begin
+        
+            f:= u + p;
+            fs:= fs + u;
+            p:= u;
+            u:= f;
+            i:= i + 1;
+            
+        end;
+        
+        write(fs);
+        
+end.
