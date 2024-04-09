@@ -1,0 +1,27 @@
+program exe040;
+
+var
+
+    n, na, me: int64;
+    
+begin
+
+    read(na);
+    me:= na;
+    n:= na;
+    
+        while n <> 0 do
+        begin
+            
+            read(n);
+            if (n > na) and (n <> 0) then
+                na:= n;
+                
+            if (n < me) and (n <> 0) then
+                me:= n;
+                
+        end;
+        
+        write(na, ' ', me);
+        
+end.
