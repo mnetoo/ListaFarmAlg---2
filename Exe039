@@ -1,26 +1,25 @@
-program somapares;
+program produtopar;
 
 var
-
-    n, i, produto: longint;
-
+    N, i, p, r: int64;
+    
 begin
 
-    i:= 1;
-    read(n);
+    read(N);
+    i:= 0;
+    p:= 2;
+    r:= 1;
     
-    while (i <= n) do 
-    begin
-    
-        if ((n + 1) mod 2 = 0) then 
-                produto:= n * (n + 1)
-                
-        else 
-            n:= n + 1;
-            
-            i:= i + 1;
+        while (i < N) do 
+        begin
         
-end;
-
-        write(produto);
+            r:= r * p;
+            p:= p + 2;
+            i:= i + 1;
+            
+        end;
+        
+    write(r);
+    
 end.
+    
